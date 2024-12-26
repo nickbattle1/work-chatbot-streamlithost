@@ -7,11 +7,12 @@ Zorro is a Retrieval-Augmented Generation (RAG) AI chatbot designed for testing 
 - **Language Model**: Utilizes Anthropic's Claude Haiku model for natural language processing and generation.  
 - **Embedding Model**: Employs OpenAI's embedding model for creating high-dimensional vector representations of data.  
 - **Data Parsing and Formatting**:  
-  - Supports text-based data files such as JSON, CSV, Excel, Word, and PDF.  
-  - Reformats files into a format compatible with the language model.  
+    - Supports text-based data files such as JSON, CSV, Excel, Word, and PDF.  
+    - Reformats files into a format compatible with the language model.  
 - **Data Chunking and Storage**: Processes large datasets by chunking them and embedding the information into a vector database for efficient querying.  
-- **Customizable Prompt**: The core prompt can be adapted to specific business needs, ensuring relevance across various applications.  
-- **API Key Management**: Provides a dropdown section for entering Anthropic and OpenAI API keys directly within the Streamlit interface.  
+- **Document Upload**: Streamlit app includes a dialogue box to upload your data files directly—no need to edit the code.  
+- **Customizable Prompt**: The core prompt is located in the `rag_methods.py` file and can be easily modified to suit your business or application needs **before** deploying the app.  
+- **API Key Management**: The app provides a dropdown section for entering your Anthropic and OpenAI API keys directly within the Streamlit interface.  
 
 ## Requirements  
 
@@ -20,19 +21,34 @@ Zorro is a Retrieval-Augmented Generation (RAG) AI chatbot designed for testing 
 
 ## Usage Instructions  
 
-1. Install the required dependencies using `pip install -r requirements.txt`.  
-2. Launch the Streamlit app either using the Streamlit website or by running in terminal:  
+1. **Install Required Libraries**:  
+   Install the necessary dependencies using:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+
+2. **Customize the Prompt**:  
+   - Modify the core prompt in the `rag_methods.py` file to match your specific business requirements **before** deploying the app.  
+
+3. **Deploying via Streamlit Website**:  
+   - You can link this repository to a new app directly from the Streamlit website. Create an app on Streamlit’s platform, link it to the GitHub repository, and deploy it with ease.  
+
+4. **Launch the Streamlit App**:  
+   Alternatively, to run the app locally, use the following command in the terminal:  
    ```bash  
    streamlit run app.py  
    ```  
-3. Use the dropdown menu in the app to input your Anthropic and OpenAI API keys.  
-4. Add your data files to the `docs` folder in the project directory for parsing and embedding.  
-5. Customize the prompt in the Streamlit app or code as needed to align with your business requirements.  
+
+5. **API Key Input**:  
+   - Use the dropdown menu in the app to input your Anthropic and OpenAI API keys.  
+
+6. **Document Upload**:  
+   - Upload your data files directly through the Streamlit app's dialogue box for parsing and embedding—no need to modify the code.  
 
 ## Why Use Zorro on Streamlit?  
 
-- **Testing Made Simple**: A quick and efficient way to test chatbot behavior in real-time without needing to deploy on a production frontend.  
+- **Testing Made Simple**: Quickly test chatbot behavior in real-time without deploying on a production frontend.  
 - **Seamless Integration**: Easily transition to your website’s frontend once the chatbot is fine-tuned.  
-- **User-Friendly Interface**: Streamlit provides an interactive UI for configuration, making it accessible for both developers and non-technical users.  
+- **User-Friendly Interface**: Streamlit offers an interactive UI for configuration, making it accessible for both developers and non-technical users.  
 
-This Streamlit-hosted version of Zorro simplifies the process of testing and refining your chatbot, ensuring it's perfectly tailored to your needs before full deployment.  
+This Streamlit-hosted version of Zorro simplifies testing and refining your chatbot, ensuring it’s perfectly tailored to your needs before full deployment.
