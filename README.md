@@ -1,4 +1,4 @@
-# Zorro: Streamlit-Hosted RAG AI Chatbot  
+# Streamlit-Hosted RAG AI Chatbot  
 
 Zorro is a Retrieval-Augmented Generation (RAG) AI chatbot designed for testing and fine-tuning chatbot interactions in a user-friendly Streamlit environment. This version includes both front-end and back-end functionality, making it an excellent tool for evaluating chatbot responses before integrating them into your official website frontend.  
 
