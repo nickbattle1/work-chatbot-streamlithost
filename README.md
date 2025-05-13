@@ -45,7 +45,7 @@ Zorro is a Retrieval-Augmented Generation (RAG) AI chatbot designed for testing 
 6. **Document Upload**:  
    - Upload your data files directly through the Streamlit app's dialogue box for parsing and embedding—no need to modify the code.  
 
-## Why Use Zorro on Streamlit?  
+## Why Host on Streamlit?  
 
 - **Testing Made Simple**: Quickly test chatbot behavior in real-time without deploying on a production frontend.  
 - **Seamless Integration**: Easily transition to your website’s frontend once the chatbot is fine-tuned.  
