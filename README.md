@@ -28,7 +28,7 @@ Zorro is a Retrieval-Augmented Generation (RAG) AI chatbot designed for testing 
    ```  
 
 2. **Customize the Prompt**:  
-   - Modify the core prompt in the `rag_methods.py` file to match your specific business requirements **before** deploying the app.  
+   - Modify the core prompt in the `rag_methods.py` file to match your specific business requirements **before** deploying the app. I have left an example in there as an idea for prompting template.
 
 3. **Deploying via Streamlit Website**:  
    - You can link this repository to a new app directly from the Streamlit website. Create an app on Streamlit’s platform, link it to the GitHub repository, and deploy it with ease.  
